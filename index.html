@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <title>Counting Training</title>
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <div id="content">
+
+        <div id="chose_mode" class="window">
+            <select id="list_mode" onchange="onListModeChange()">
+            </select>
+            <select id="list_level" onchange="onListLevelChange()">
+            </select>
+        </div>
+
+        <div id="main" class="window">
+            <div id="list_results">
+            </div>
+            <div id="operation">
+            </div>
+            <input id="input_number" type="number" placeholder="enter correct number" required autofocus/>
+            <button id="btn_check_number" >CHECK</button>
+        </div>
+
+    </div>
+
+    <script src='lib/decimal.js'></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
